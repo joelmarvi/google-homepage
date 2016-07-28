@@ -1,0 +1,203 @@
+body {
+	background-color: #ffffff;
+}
+.header {
+	height: 40px; 
+	position: relative; /* so I can move the other divs relative to this*/
+	/*border: 1px solid black; makes positioning WAAAAY easier*/
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+a {
+	text-decoration: none; /* no underline of the links*/
+	color: #666; /*changes the color */
+}
+
+.hco {
+	color: #000;
+}
+#gmail {
+	height: 32px;
+	width: 32px;
+	right: 238px;
+	top: 22px;
+	position: absolute; /*moves the div relative to the header*/
+}
+
+#images {
+	height: 32px;
+	width: 32px;
+	right: 190px;
+	top: 22px;
+	position: absolute;
+}
+
+#apps {
+	height: 32px;
+	width: 32px;
+	right: 133px;
+	top: 16px;
+	position: absolute;
+	text-align: center; /*to center the image */
+}
+
+#bell {
+	height: 32px;
+	width: 32px;
+	right: 88px;
+	top: 16px;
+	position: absolute;
+	text-align: center;
+}
+
+#pic {
+	height: 32px;
+	width: 32px;
+	right: 41px;
+	top: 13px;
+	position: absolute;
+	text-align: center;
+	/*border-radius: 100%; this helped position makes the div visible*/
+}
+
+#jorge {
+	border-radius: 100%; /*makes the image into a circle */
+}
+
+.image {
+	margin: 152px auto; /*moves the div relative to the header down 145px and takes the whole width with auto*/ 
+	text-align: center; /*centers the doodle inside the div*/
+}
+
+.search {
+	position: absolute; /*moves from the header the entire div*/
+	top: 333px; 	
+	height: 60px;/*so I can place my buttons inside the div and position them easier*/
+	width: 1000px;
+	text-align: center; /*to move the bar*/
+	left: 150px;
+}
+
+#border {
+	position: absolute; /* moves from .search*/
+	border: 1px solid #d9d9d9;
+	height: 35px;	
+	width: 600px;
+	left: 200px;
+	top: -9px; 
+}
+
+#bar {
+	position: absolute;
+	left: 202px;
+	top: -3px;
+}
+
+input[type=text] {
+	border: none;
+	outline: none;
+	font-size: 18px;
+	font-family: arial, sans-serif;
+}
+
+#mic {
+	position: absolute;
+	right: 210px;
+}
+
+.buttons {
+	position: absolute; /*relative to the header*/
+	height: 60px; /*so I can place my buttons inside the div and position them easier*/	
+	width: 1000px;
+	top: 393px;
+	left: 150px;
+	font-size: 13px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+}
+
+#google {
+	position: absolute; /*relative to .buttons*/
+	border: 1px solid #f2f2f2;
+	height: 35px;
+	width: 125px;
+	background-color: #f2f2f2;
+	border-radius: 2px;
+	text-align: center; /*centers the text*/
+	line-height: 35px; /*centers the text vertically by setting it equal to height*/
+	left: 355px; /*moves the button*/
+	color: #757575;
+}
+
+#lucky {
+	position: absolute;
+	border: 1px solid #f2f2f2;
+	height: 35px;
+	width: 145px;
+	background-color: #f2f2f2;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 35px; /*centers the text vertically by setting it equal to height*/
+	right: 363px;
+	color: #757575;
+}
+
+.footer {
+	position: relative;
+	clear: both;
+	height: 40px;
+	border-top: 1px solid #e4e4e4;
+	top: 60px; /*moves from below the buttons div cuz of clear: both;*/
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	line-height: 40px;
+	background-color: #f2f2f2;
+}
+
+#ads {
+	position: absolute;
+	left: 30px;
+}	
+
+#bus {
+	position: absolute;
+	left: 125px;
+}	
+
+#abt {
+	position: absolute;
+	left: 208px;
+}
+
+#pri {
+	position: absolute;
+	right: 173px;
+}	
+
+#trm {
+	position: absolute;
+	right: 105px;
+}			
+
+#sts {
+	position: absolute;
+	right: 28px;
+}			
+
+a:hover {
+	text-decoration: underline;
+}
+
+#google:hover {
+	border: 1px solid #cccccc;
+	color: black;
+}
+
+#lucky:hover {
+	border: 1px solid #cccccc;
+	color: black;
+}
+
+#border:hover {
+	border: 1px solid #bfbfbf;
+}
