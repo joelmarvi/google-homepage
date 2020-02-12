@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8"> <!-- should be placed to display all chracters-->
-		<title>Google Homepage</title>
+		<meta charset="UTF-8"> <!-- should be placed to display all chracters-->
+		<title>Google</title>
 		<link type="text/css" rel="stylesheet" href="styles/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--allows for better visibility regardless of device-->
 		<link type="text/css" rel="stylesheet" href="styles/reset.css"><!--good thing to have to style the way you want to, I googled this-->
 	</head>
-	<body>
+	<body> 
 		<div class="header">
-			<div id="gmail"><a href="http://www.google.com" class="hco">Gmail</a></div>
-			<div id="images"><a href="http://www.google.com" class="hco">Images</a></div>
-			<div id="apps"><a href="http://www.google.com"><img src="images/apps.png" height="25" width="25" alt="google aps"></a></div>
-			<div id="bell"><a href="http://www.google.com"><img src="images/bell.jpg" height="25" width="25" alt="notifications"></a></div>
-			<div id="pic"><a href="http://www.google.com"><img id="jorge" src="images/jorge.jpg" height="32" width="32" alt="Jorge"></a></div><!-- is a good practice to set an alt text for the images-->
+			<ul>
+				<li><a href="http://www.google.com">Gmail</a></li>
+				<li><a href="http://www.google.com">Images</a></li>
+				<li><a href="http://www.google.com"><img id ="apps" src="images/apps.svg" height="25" width="25" alt="google aps"></a></li>
+				<li><a href="http://www.google.com"><img id="notifications" src="images/notifications.png" height="25" width="25" alt="notifications"></a></li>
+				<li><a href="http://www.google.com"><img id="jorge" src="images/jorge.jpeg" height="30" width="30" alt="jorge"></a></li><!-- is a good practice to set an alt text for the images-->
+			</ul>	
 		</div>
-		<div class="image"><a href="http://www.google.com"><img src="images/doodle.png" height="100" width="300" alt="Google"></a></div>
-		<div class="search">
-			<div id="border"></div>
-			<div id="mic"><a href="http://www.google.com"><img src="images/mic.png" height="22" width="22" alt="mic"></a></div>
-			<div id="bar">
-				<form action="#" method="GET"><!--will be covered later in the course-->
-				<input type="text" name="search" maxlength="2048" size="49" placeholder="Search Google or enter URL"><!--placeholder creates the disspearing text--> 
-				</form>
-			</div>		
+		<br>
+		<div class="doodle">
+			<a href="http://www.google.com"><img src="images/google.png" height="100" width="300" alt="Google"></a>
 		</div>
-		<div class="buttons">
-			<a href="http://www.google.com"><div id="google">Google Search</div></a>
-			<a href="http://www.google.com"><div id="lucky">I'm Feeling Lucky</div></a>
-		</div>
-		<div class="footer">
-			<div id="ads"><a href="http://www.google.com">Advertising</a></div>
-			<div id="bus"><a href="http://www.google.com">Business</a></div>
-			<div id="abt"><a href="http://www.google.com">About</a></div>
-			<div id="pri"><a href="http://www.google.com">Privacy</a></div>
-			<div id="trm"><a href="http://www.google.com">Terms</a></div>
-			<div id="sts"><a href="http://www.google.com">Settings</a></div>
-		</div>
+		<form>
+			<div class="search">
+				<input type="text">
+				<img id="mic" src="images/mic.png" width="15px" height="20px">
+			</div>
+			<div class="buttons">
+				<input type="submit" value="Google Search">
+				<input type="submit" value="I'm feeling lucky">
+			</div>
+		</form>
+		<footer>
+			<div class="bottom">
+				<ul>
+					<li><a href="http://www.google.com">Advertising</a></li>
+					<li><a href="http://www.google.com">Business</a></li>
+					<li><a href="http://www.google.com">About</a></li>
+					<li><a href="http://www.google.com">Privacy</a></li>
+					<li><a href="http://www.google.com">Terms</a></li>
+					<li><a href="http://www.google.com">Settings</a></li>
+				</ul>
+			</div>
+		</footer>
 	</body>	
 </html>	

@@ -1,203 +1,150 @@
-body {
-	background-color: #ffffff;
-}
-.header {
-	height: 40px; 
-	position: relative; /* so I can move the other divs relative to this*/
-	/*border: 1px solid black; makes positioning WAAAAY easier*/
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
 	font-family: arial, sans-serif;
-	font-size: 13px;
-}
-a {
-	text-decoration: none; /* no underline of the links*/
-	color: #666; /*changes the color */
-}
-
-.hco {
-	color: #000;
-}
-#gmail {
-	height: 32px;
-	width: 32px;
-	right: 238px;
-	top: 22px;
-	position: absolute; /*moves the div relative to the header*/
-}
-
-#images {
-	height: 32px;
-	width: 32px;
-	right: 190px;
-	top: 22px;
-	position: absolute;
-}
-
-#apps {
-	height: 32px;
-	width: 32px;
-	right: 133px;
-	top: 16px;
-	position: absolute;
-	text-align: center; /*to center the image */
-}
-
-#bell {
-	height: 32px;
-	width: 32px;
-	right: 88px;
-	top: 16px;
-	position: absolute;
-	text-align: center;
-}
-
-#pic {
-	height: 32px;
-	width: 32px;
-	right: 41px;
-	top: 13px;
-	position: absolute;
-	text-align: center;
-	/*border-radius: 100%; this helped position makes the div visible*/
-}
-
-#jorge {
-	border-radius: 100%; /*makes the image into a circle */
-}
-
-.image {
-	margin: 152px auto; /*moves the div relative to the header down 145px and takes the whole width with auto*/ 
-	text-align: center; /*centers the doodle inside the div*/
+	text-decoration: none;
 }
 
 .search {
-	position: absolute; /*moves from the header the entire div*/
-	top: 333px; 	
-	height: 60px;/*so I can place my buttons inside the div and position them easier*/
-	width: 1000px;
-	text-align: center; /*to move the bar*/
-	left: 150px;
+	position: relative;
 }
 
-#border {
-	position: absolute; /* moves from .search*/
-	border: 1px solid #d9d9d9;
-	height: 35px;	
-	width: 600px;
-	left: 200px;
-	top: -9px; 
+.search input {
+	text-align: left;
+
+	display: block;
+
+	margin: 25px auto;
+	border: 1px solid #E6E6E6;
+
+	width: 33%;
+	height: 36px;	
+
+	font-size: 100%;
+
+	padding-left: 20px;
 }
 
-#bar {
+.search img {
 	position: absolute;
-	left: 202px;
-	top: -3px;
+	top: 20%;
+	left: 65%;
 }
 
-input[type=text] {
-	border: none;
-	outline: none;
-	font-size: 18px;
-	font-family: arial, sans-serif;
+.search input:hover {
+	box-shadow: 6px 6px 6px #BFBFBF;
 }
 
-#mic {
-	position: absolute;
-	right: 210px;
+.doodle {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11%;
+	text-align: center;
 }
 
 .buttons {
-	position: absolute; /*relative to the header*/
-	height: 60px; /*so I can place my buttons inside the div and position them easier*/	
-	width: 1000px;
-	top: 393px;
-	left: 150px;
-	font-size: 13px;
-	font-family: arial, sans-serif;
-	font-weight: bold;
-}
-
-#google {
-	position: absolute; /*relative to .buttons*/
-	border: 1px solid #f2f2f2;
-	height: 35px;
-	width: 125px;
-	background-color: #f2f2f2;
-	border-radius: 2px;
-	text-align: center; /*centers the text*/
-	line-height: 35px; /*centers the text vertically by setting it equal to height*/
-	left: 355px; /*moves the button*/
-	color: #757575;
-}
-
-#lucky {
-	position: absolute;
-	border: 1px solid #f2f2f2;
-	height: 35px;
-	width: 145px;
-	background-color: #f2f2f2;
-	border-radius: 2px;
 	text-align: center;
-	line-height: 35px; /*centers the text vertically by setting it equal to height*/
-	right: 363px;
-	color: #757575;
+	
 }
 
-.footer {
-	position: relative;
-	clear: both;
-	height: 40px;
-	border-top: 1px solid #e4e4e4;
-	top: 60px; /*moves from below the buttons div cuz of clear: both;*/
-	font-family: arial, sans-serif;
+.buttons input {
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-right: 15px;
+
+	height: 36px;
+	line-height: 27px;
+
+	color: grey;
+	font-weight: bold;
+	background-color: #F2F2F2;
+}
+
+.buttons input:hover {
+	color:black;
+	border: 1px solid grey;
+	background-color: #F2F2F2;
+	box-shadow: 0px 1px 1px #FCFCFC;
+}
+
+p, li {
 	font-size: 13px;
-	line-height: 40px;
-	background-color: #f2f2f2;
 }
 
-#ads {
-	position: absolute;
-	left: 30px;
-}	
-
-#bus {
-	position: absolute;
-	left: 125px;
-}	
-
-#abt {
-	position: absolute;
-	left: 208px;
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
-#pri {
-	position: absolute;
-	right: 173px;
-}	
 
-#trm {
-	position: absolute;
-	right: 105px;
-}			
+.header ul {
+	list-style-type: none;
+	float: right;
+	margin-top: 10px;
+}
 
-#sts {
-	position: absolute;
-	right: 28px;
-}			
+li {
+	display: inline;
+	padding: 8px;
+	
+}
 
-a:hover {
+.header li a {
+	color: #333333;
+	padding: 7px;
+}
+
+li a:hover {
 	text-decoration: underline;
 }
 
-#google:hover {
-	border: 1px solid #cccccc;
-	color: black;
+.header input {
+	background-color: #4285f4;
+	color: #fff;
+	height: 30px;
+	border-radius: 2px;
+	font-weight: bold;
+	padding: 0 16px;
 }
 
-#lucky:hover {
-	border: 1px solid #cccccc;
-	color: black;
+.header #apps {
+	position: relative;
+	top: 4px;
 }
 
-#border:hover {
-	border: 1px solid #bfbfbf;
+.header #notifications {
+	position: relative;
+	top: 4px;
+}
+
+.header #jorge {
+	position: relative;
+	top: 4px;
+	height: 32px;
+	width: 32px;
+	border-radius: 100%;
+}
+
+.bottom ul {
+	background-color: #F2F2F2;
+	border: 1px solid #FAFAFA;
+	height: 40px;
+	line-height: 30px;
+	color: #737373;
+
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.bottom ul li:nth-child(-n+3) {
+	float: left;
+} /* to move the other half of the footer to the left*/
+
+.bottom ul li {
+	float: right;
+	margin-right: 1%;
+	margin-left: 1%;
 }
